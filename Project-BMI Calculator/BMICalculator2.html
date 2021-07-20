@@ -1,0 +1,51 @@
+<html>
+    <head>
+<title>My Calculator Apploication</title>
+<style>
+
+    body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: sans-serif;
+            background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+            min-height: 100vh;
+        }
+
+        div{
+            margin-top: 10%;
+        }
+
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        #btn{
+            border: solid 1px;
+            background-color: #ffdcb8;
+            height: 40px;
+            width: 200px;
+        }
+
+        #btn:hover{
+                box-shadow: 1px 1px 10px #341f97;
+            }
+
+
+    </style>
+    </head>
+    <body>
+        <div align="center">
+        <h2 style="color: brown;">BMI Calculator</h2>
+
+        <form action="/" method="post">
+           <input id="btn" type ="text" name="weight" placeholder="Enter your weight....."> 
+           <input id="btn" type ="text" name="height"  placeholder="Enter your height....."> 
+            
+            <button id="btn" type="submit">Calculate BMI</button>
+            <p id="info">Please enter weight [kg] and  height [cm]</p>
+        </form>
+        </div>
+    </body>
+</html>

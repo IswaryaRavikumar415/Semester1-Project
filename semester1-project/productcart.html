@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="image\myntra-icon.png">
+  <title>SHOPPING BAG</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="styleSheet" type="text/css" href="stylesheet\style.css">
+
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+</head>
+<style>
+  /* Header */
+header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 60px;
+  max-width: 92%;
+  margin: auto;
+}
+
+.headerContainer {
+  display: flex;
+}
+
+header .bag, .secure
+{
+  margin-left: 360px;
+  margin-top: 27px;
+  font-size: 10px;
+  font-weight: bold;
+ letter-spacing: 3px;
+ color: #696b79;
+}
+header .bag span
+{
+  color: #20bd99;
+    border-bottom: 2px solid #20bd99;
+}
+.secure img
+{
+  height: 30px;
+  width:30px;
+}
+.delivery
+{
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 5px;
+}
+.delivery img{
+  height: 30px;
+}
+.offer
+{
+  border: 1px solid silver;
+  border-left: 3px solid #20bd99;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+.shopping
+{
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+.product, .product1
+{
+  margin: 10px 0 10px 0;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 5px;
+}
+.remove, .remove1
+{
+  cursor: pointer;
+}
+/* See More/Less */
+.more
+{
+  display: none;
+}
+
+</style>
+
+<body>
+
+
+  <header>
+
+    
+
+<div class="bag">
+<span>BAG</span>&nbsp;&nbsp;----------&nbsp;&nbsp;ADDRESS&nbsp;&nbsp;----------&nbsp;&nbsp;PAYMENT
+</div>
+
+
+  </div>
+  </header>
+<hr>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-2">
+
+    </div>
+    <div class="cart">
+    <div class="col-lg-5">
+<div class="offer">
+  <div  class="div1">
+            <h4 style="color:#20bd99;">Offers</h4>
+            <ul>
+            <li>10% SuperCash on MobiKwik wallet, TCA</li>
+            <li>Flat Rs.200 Cashback on Airtel Payments Bank,TCA</li>
+            <div class="more">
+            <li>50% Cashback Voucher of up to Rs 600 for New PayPal user's first ever transaction. TCA</li>
+            <li>10% Cashback up to Rs 250 on PayZapp. TCA</li>
+            <li>10% Cashback using HDFC Bank Debit Cards on a min spend of Rs 3000. TCA</li>
+          </div>
+            <a  class="moreless-button" href="#"style="text-decorate:none">Show more<span class="caret"></span></a>
+            </ul>
+          </div>
+          <script>
+          $('.moreless-button').click(function() {
+               $('.more').slideToggle();
+             if ($('.moreless-button').text() == "Show more") {
+              $(this).text("Show less")
+            } else {
+              $(this).text("Show more")
+            }
+          });
+
+          </script>
+</div>
+<div class="delivery">
+  <img src="image\truck.png" alt="">
+  shop for <span><i class="fa fa-inr" aria-hidden="true"></i>173</span>more to get <b>Free Delivery</b>
+</div>
+<div class="shopping">
+<b>My Shopping Bag(2 Items) <span style="float:right">Total: <i class="fa fa-inr" aria-hidden="true"></i>1,175</span></b>
+</div>
+  <div class="product">
+<div class="row">
+
+  <div class="col-lg-3">
+    <img src="https://assets.myntassets.com/w_120,h_160,q_95,c_limit,fl_progressive/h_160,q_95,w_120/v1/assets/images/productimage/2019/6/6/4631ae10-14c5-4291-ab86-8c70a551f8cb1559819621616-1.jpg" class="image-base-imgResponsive" alt="image" style="width: 100%;">
+  </div>
+  <div class="col-lg-7">
+    <div class="shop">
+      <b>V SALES Pink Semi-Stiched Lehanga <span style="float:right;">5,394</span> </b><br>
+      <small>Sold By: Proleague </small><span style="float:right;"><strike>11,990</strike><span style="color:red">&nbsp;&nbsp;55% OFF</span></span><br>
+      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Size: OneSize</button>
+    <!-- Modal -->
+      <div id="myModal1" class="modal fade" role="dialog"  style="width:200px;margin-left:500px;margin-top:150px">
+     <div class="modal-dialog">
+     <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Size</h4>
+       </div>
+      <div class="modal-body">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+
+       </div>
+      </div>
+     </div>
+   </div>
+      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Qty:1</button>
+  <!-- Modal -->
+    <div id="myModal1" class="modal fade" role="dialog"  style="width:200px;margin-left:500px;margin-top:150px">
+   <div class="modal-dialog">
+   <!-- Modal content-->
+   <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title">CHANGE QUANTITY</h4>
+     </div>
+    <div class="modal-body">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+
+     </div>
+    </div>
+   </div>
+ </div>
+    </div>
+    <hr>
+    <b><span class="remove">REMOVE </span><span style="color:silver;">|</span> <span>MOVE TO WHISHLIST</span></b>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".remove").click(function(){
+        $(".product").remove();
+      });
+    });
+    </script>
+  </div>
+</div>
+  <div class="col-lg-2">
+
+  </div>
+</div>
+<div class="product1">
+<div class="row">
+
+<div class="col-lg-3">
+  <img src="https://assets.myntassets.com/w_120,h_160,q_95,c_limit,fl_progressive/h_160,q_95,w_120/v1/assets/images/productimage/2019/6/6/4631ae10-14c5-4291-ab86-8c70a551f8cb1559819621616-1.jpg" class="image-base-imgResponsive" alt="image" style="width: 100%;">
+</div>
+<div class="col-lg-7">
+  <div class="shop">
+    <b>V SALES Pink Semi-Stiched Lehanga <span style="float:right;">5,394</span> </b><br>
+    <small>Sold By: Proleague </small><span style="float:right;"><strike>11,990</strike><span style="color:red">&nbsp;&nbsp;55% OFF</span></span><br>
+    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Size: OneSize</button>
+  <!-- Modal -->
+    <div id="myModal1" class="modal fade" role="dialog"  style="width:200px;margin-left:500px;margin-top:150px">
+   <div class="modal-dialog">
+   <!-- Modal content-->
+   <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title">Size</h4>
+     </div>
+    <div class="modal-body">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+
+     </div>
+    </div>
+   </div>
+ </div>
+    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Qty:1</button>
+<!-- Modal -->
+  <div id="myModal1" class="modal fade" role="dialog"  style="width:200px;margin-left:500px;margin-top:150px">
+ <div class="modal-dialog">
+ <!-- Modal content-->
+ <div class="modal-content">
+    <div class="modal-header">
+    <h4 class="modal-title">CHANGE QUANTITY</h4>
+   </div>
+  <div class="modal-body">
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+
+   </div>
+  </div>
+ </div>
+</div>
+  </div>
+  <hr>
+  <b><span class="remove1">REMOVE </span><span style="color:silver;">|</span> <span>MOVE TO WHISHLIST</span></b>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".remove1").click(function(){
+      $(".product1").remove();
+    });
+  });
+  </script>
+</div>
+</div>
+<div class="col-lg-2">
+
+</div>
+</div>
+</div>
+</div>
+  <div class="col-lg-3">
+    <div class="row">
+
+      <div class="col-lg-8" style="color:silver;">
+        Options
+      </div>
+      <br>
+      <div class="col-lg-4">
+
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Coupons
+        </div>
+        <div class="col-lg-4">
+          <button type="button" style="border:1px solid blue;color:blue;background-color:white;border-radius:5px;" name="button">Apply</button>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10">
+          <b>PRICE DETAILS</b>
+        </div>
+        <br>
+        <div class="col-lg-2">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Total MRP
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-inr" aria-hidden="true"></i>1,548
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Bag discount
+        </div>
+        <div class="col-lg-4" style="color:rgb(35, 77, 35);">
+          <span>-<i class="fa fa-inr" aria-hidden="true"></i>540</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Estimate Tax
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-inr" aria-hidden="true"></i>18
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Coupon Discount
+        </div>
+        <div class="col-lg-4">
+          <span style="color:red;">Apply Coupon</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          Delivery Charges
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-inr" aria-hidden="true"></i>149
+        </div>
+      </div><hr>
+      <div class="row">
+        <div class="col-lg-8">
+            <h2>Total</h2>
+        </div>
+        <div class="col-lg-4" style="color: #fc621b;">
+            <h3><span><i class="fa fa-inr" aria-hidden="true"></i>1,175</span></h3>
+        </div>
+    </div>
+    <a href="address.html.html" class="btn btn-primary btn-lg" role="button" style="width: 400px; background-color:blue; margin-top: 30px;" >
+        PLACE ORDER</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

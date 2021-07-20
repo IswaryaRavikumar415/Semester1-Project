@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style11.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="col-3"></div>
+            <div class="col-1 link">
+                <a href="#" class="brand">BAG</a>
+            </div>
+            <div class="col-1 link">
+                <hr class="new2">
+            </div>
+            <div class="col-1 link">
+                <a href="#" class="brand brand1">ADDRESS</a>
+            </div>
+            <div class="col-1 link">
+                <hr class="new2">
+            </div>
+            <div class="col-1 link">
+                <a href="#" class="brand">PAYMENTS</a>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="container-fluid maincf">
+            <div class="row">
+                <div class=col-1></div>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card maincard" id="firstaddcard1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <label class="ratio">
+                                               <input type="radio" checked="checked" name="radio" onclick="in1Function();">
+                                               <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-10 address">
+                                            <div class="d1 name"><span id="1name"></span><span> (DEFAULT)</span></div>
+                                            <div id="1street" class="d1"></div>
+                                            <div id="1area" class="d1"></div>
+                                            <div id="1city" class="d1"></div>
+                                            <div class="d1"><span id="1state"></span>- <span id="1pincode"></span></div>
+                                            <br>
+                                            <div><b>Mobile.No: </b> <span id="1mobile"></span></div>
+                                            <br>
+                                            <div>
+                                                <li>Cash On Delivery Available.</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                        <button type="button" class="btn btn-primary editbut" onclick="remove()">REMOVE</button>
+                                    <button type="button" id="editbut" class="btn btn-primary editbut" data-toggle="modal" data-target="#exampleModal">EDIT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                                <div class="card maincard" id="firstaddcard2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <label class="ratio">
+                                                       <input type="radio" name="radio" onclick="in2Function();">
+                                                       <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-10 address">
+                                                    <div class="d1 name"><span id="2name"></span></div>
+                                                    <div id="2street" class="d1"></div>
+                                                    <div id="2area" class="d1"></div>
+                                                    <div id="2city" class="d1"></div>
+                                                    <div class="d1"><span id="2state"></span> - <span id="2pincode"></span></div>
+                                                    <br>
+                                                    <div><b>Mobile.No: </b> <span id="2mobile"></span></div>
+                                                    <br>
+                                                    <div>
+                                                        <li>Cash On Delivery Available.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                <button type="button" class="btn btn-primary editbut" onclick="remove1()">REMOVE</button>
+                                            <button type="button" id="editbut1" class="btn btn-primary editbut" data-toggle="modal" data-target="#exampleModal1">EDIT</button>
+                                        </div>
+                                    </div>
+
+                        </div>
+                   </div>
+
+
+                    <div id="addcard" class="div1 card " onclick="addcard()" style="position:relative;">
+                            <div class="div2 card-body ">
+                                <img class="addlogo" src="https://www.nhancenow.com/assets-new/img/plus.png" alt="">
+                                <p class=newadd>Add New Address</p>
+                            </div>
+                        </div>
+                </div>
+
+
+
+                <div class="col-4">
+                 <div class="row ">
+                     <div class="col-1">
+                            <div class="vl"></div>
+                     </div>
+                     <div class="col-10">
+                        <div class="trydiv">
+                            <span class="form-check"><span><input class="form-check-input position-static cheak" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></span><span class="trycheak"><b>Try and Buy not available</b></span></span>
+                            <span class="phara">Orders below &#8377; 2000/- are not eligible.<br>
+                            <span class="tryhow"><b>HOW ITS WORKS</b></span></span>
+                        </div>
+
+                        <div>
+                            <span>CHOOSE A DELIVERY SPEED</span>
+                            <div class="card sdcard" id="delopt">
+                                <div class="card-body row">
+                                        <div class="col-2">
+                                                <label class="ratio">
+                                                   <input type="radio" checked="checked" name="delivery type">
+                                                   <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-10">
+                                                <span><b>Standard Delivery</b></span><br>
+                                                <span>Get it by 19th August 2020 | Delivery charge &#8377; 149</span>
+                                            </div>        
+                                </div>                            
+                            </div>
+                        </div>
+
+                        <div class="delest">
+                            ESTIMATED DELIVERY DATES
+                            <div class="row">
+                                <div class="col-3 simgdiv">
+                                <img class="f1image" src="images1/saree.webp" alt="">
+                                </div>                                
+                                <div class="col-9 edcontant">
+                                <span><b>16 August 2020</b></span><br>
+                                <span><i>Eligible for Try and Buy</i></span>
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                    <div class="col-3 simgdiv">
+                                    <img class="f1image" src="images1/blacksaree.webp" alt="">
+                                    </div>                                
+                                    <div class="col-9 edcontant">
+                                    <span><b>19 August 2020</b></span><br>
+                                    <span><i>Eligible for Try and Buy</i></span>
+                                    </div>                                
+                                </div>
+                        </div>
+                        <div class="price">
+                            <div class="row">
+                                <span class="pd"><b>PRICE DETAILS</b></span>
+                            </div>
+                            <hr class="new4">
+                            <div class="row" id="bag">
+                                <div class="col-9">Bag Total <span class="bts">&#8377; 1,146</span></div>
+                            </div>
+
+                           <div class="row">
+                                <div class="col-9">
+                                    <span>Order Total</span><span id="vdW11" onclick="odFunction()" class="pricevd">View Details</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>&#8377; 1,146</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <span>Delivery Charges</span>
+                                </div>
+                                <div class="col-3">
+                                    <span>&#8377;  120</span>
+                                </div>
+                            </div>
+                            <hr class="new4">
+                            <div class="row">
+                                <div class="col-9">
+                                    <span><b>Total</b></span>
+                                </div>
+                                <div class="col-3">
+                                    <span><b>&#8377; 1,266</b></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                        <a href= "week9.html"><button class="btn btn-outline-info continuebut" type="">CONTINUE</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" onclick="close1()" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group inputBox">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control input" id="1vname" value="Iswarya Ravikumar" required>
+                                <small id="emailHelp" class="form-text text-muted">Enter Your Real Name Cannot Use Nick Names.</small>
+                            </div>
+                            <div class="form-group inputBox">
+                                <label for="street">Flat No,Street</label>
+                                <input type="text" class="form-control input" id="1vstreet" value="19/39 Bunglow Street" required>
+                            </div>
+                            <label for="Area">Area</label>
+                                <div class="form-group inputBox">
+                                <input type="text" class="form-control input" id="1varea" value="Odakkadu" required>
+                            </div>
+
+                            <div class="row">
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="City">City</label>
+                                            <input type="text" class="form-control input" id="1vcity" value="Tirupur" required>
+                                    </div>
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="State">State</label>
+                                            <input type="text" class="form-control input" id="1vstate" value="TAMILNADU" required>
+                                    </div>        
+                            </div>
+                            <div class="row">
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="Pincode">Pincode</label>
+                                            <input type="text" class="form-control input" id="1vpincode" value="641602">
+                                    </div>
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="Mobile">Mobile Number</label>
+                                            <input type="text" class="form-control input" id="1vmobile" value="9092973115">
+                                    </div>                                            
+                            </div>
+                            <div class="form-check inputBox">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>  
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="closedata" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="savedata" class="btn btn-primary" onclick="showInput();"  data-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" onclick="close2()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group inputBox">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control input" id="2vname" value="">
+                                <small id="emailHelp" class="form-text text-muted">Enter Your Real Name Cannot Use Nick Names.</small>
+                            </div>
+                            <div class="form-group inputBox">
+                                <label for="street">Flat No,Street</label>
+                                <input type="text" class="form-control input" id="2vstreet" value="">
+                            </div>
+                            <label for="Area">Area</label>
+                                <div class="form-group inputBox">
+                                <input type="text" class="form-control input" id="2varea" value="">
+                            </div>
+
+                            <div class="row">
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="City">City</label>
+                                            <input type="text" class="form-control input" id="2vcity" value="">
+                                    </div>
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="State">State</label>
+                                            <input type="text" class="form-control input" id="2vstate" value="">
+                                    </div>        
+                            </div>
+                            <div class="row">
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="Pincode">Pincode</label>
+                                            <input type="text" class="form-control input" id="2vpincode" value="">
+                                    </div>
+                                    <div class="col-6 form-group inputBox">
+                                            <label for="Mobile">Mobile Number</label>
+                                            <input type="text" class="form-control input" id="2vmobile" value="">
+                                    </div>                                            
+                            </div>
+                            <div class="form-check inputBox">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">Check me out</label>
+                            </div>  
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="closedata" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="savedata" class="btn btn-primary" onclick="showInput1();"  data-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script language="JavaScript" src="index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    </body>
+</html>
